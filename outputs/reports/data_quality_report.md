@@ -1,0 +1,17 @@
+# Data-quality report
+
+| Metric | Value |
+|---|---|
+| rows_raw | 100000 |
+| columns_raw | 48 |
+| missing_pct_before | 21.04 |
+| duplicate_ids_in_raw | 0 |
+| validation_pass_rate | 0.9883 |
+| threshold | 0.9 |
+| rows_clean | 99797 |
+| columns_clean | 47 |
+| rows_removed_total | 203 |
+| columns_dropped | ['LANE_CNT', 'WORK_ZONE_TYPE'] |
+| missing_pct_after | 0.06 |
+| injury_rate_pct | 13.68 |
+| quality_gate | PASSED |

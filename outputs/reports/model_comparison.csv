@@ -1,0 +1,6 @@
+model,cv_precision,cv_recall,cv_f1,cv_roc_auc,cv_pr_auc
+Baseline (most frequent),0.0,0.0,0.0,0.5,0.137
+Logistic Regression,0.305,0.734,0.431,0.82,0.514
+Random Forest,0.41,0.579,0.48,0.824,0.511
+Hist Gradient Boosting,0.332,0.715,0.453,0.83,0.527
+Hist Gradient Boosting (tuned),0.325,0.723,0.448,0.828,0.525

@@ -1,0 +1,27 @@
+# Part C write-ups (write in your own words, list sources)
+
+## C1: feed query results
+```
+1000 users, 50000 follows, 100000 posts
+EXPLAIN QUERY PLAN (no index):
+   SCAN f
+   SCAN p
+   USE TEMP B-TREE FOR ORDER BY
+No index: 256.4 ms per query
+EXPLAIN QUERY PLAN (with indexes):
+   SEARCH f USING COVERING INDEX idx_follows (follower_id=?)
+   SEARCH p USING INDEX idx_posts_author_time (author_id=?)
+   USE TEMP B-TREE FOR ORDER BY
+With indexes: 0.08 ms per query (speed-up about 3089x)
+Ranked feed: first call 1.20 ms, cached call 0.08539 ms; top ids [24261, 51039, 97914, 10474, 28935, 24355, 85722, 75370, 45071, 77826]
+```
+TODO: answer the guiding questions yourself.
+
+## C2
+TODO
+
+## C3 (glossary of 10 terms + one trade-off)
+TODO
+
+## C4 (workflow + one-page design doc)
+TODO

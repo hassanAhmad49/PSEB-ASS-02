@@ -1,0 +1,9 @@
+{
+  "rows_raw": 100000,
+  "columns_raw": 48,
+  "missing_pct_before": 21.04,
+  "duplicate_ids_in_raw": 0,
+  "validation_pass_rate": 0.6918,
+  "threshold": 0.9,
+  "quality_gate": "FAILED"
+}
